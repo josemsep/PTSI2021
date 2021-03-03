@@ -11,9 +11,8 @@ app.use(cors({
   origin: ['http://localhost:8080', 'http://localhost:8000']
 }));
 app.use(logger('dev'));
-//app.use('/assets', express.static('assets'));
+app.use('/assets', express.static('assets'));
 //app.use('/views', express.static('views'));
-//app.use('/pdf', express.static('template'))
 
 app.listen(port, function (err) {
   if (!err) {
